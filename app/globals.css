@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; }
+body { background: #FFFDF7; color: #2B1A12; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+::selection { background: #F6DDE0; color: #2B1A12; }
+a { color: #2E6F6A; text-decoration: none; }
+a:hover { color: #1E4F4B; }
+
+@layer utilities {
+  /* Signature polka-dot field. Drive with --dot / --dot-r / --dot-s. */
+  .dots {
+    background-image:
+      radial-gradient(circle, var(--dot, rgba(43,26,18,.08)) var(--dot-r, 10px), transparent calc(var(--dot-r, 10px) + .5px)),
+      radial-gradient(circle, var(--dot, rgba(43,26,18,.08)) var(--dot-r, 10px), transparent calc(var(--dot-r, 10px) + .5px));
+    background-size: var(--dot-s, 52px) var(--dot-s, 52px);
+    background-position: 0 0, calc(var(--dot-s, 52px) / 2) calc(var(--dot-s, 52px) / 2);
+  }
+  .inner-hi { box-shadow: inset 0 1px 1px rgba(255,255,255,.6); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: .001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
