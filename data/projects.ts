@@ -38,7 +38,6 @@ export const featured: Project[] = [
       { value: "48,162", label: "Images analysed" },
       { value: "15", label: "Disease classes" },
       { value: "2", label: "Interface variants A/B tested" },
-      { label: "To fill: test accuracy / macro F1", todo: true },
     ],
     blocks: [
       {
@@ -48,11 +47,6 @@ export const featured: Project[] = [
       {
         heading: "My role",
         body: "Data analysis, the splitting strategy, the Streamlit front end, and the A/B test. Model training was a shared effort across the team.",
-      },
-      {
-        heading: "What I'd do differently",
-        chip: "To fill — one honest sentence",
-        body: "Recruiters read this line more carefully than the metrics.",
       },
     ],
     workflow: [
@@ -84,7 +78,6 @@ export const featured: Project[] = [
       { value: "2,593", label: "NDVI sample points" },
       { value: "0.761", label: "Mean NDVI" },
       { value: "0.302–0.946", label: "NDVI range observed" },
-      { label: "To fill: Moran's I & RF accuracy", todo: true },
     ],
     blocks: [
       {
@@ -122,14 +115,11 @@ export const featured: Project[] = [
     links: [{ label: "Read the report", href: "https://drive.google.com/file/d/1B_FxI6RIL0zfeffB8b4QpwSHGRUiATun/view" }],
     metrics: [
       { value: "3", label: "Models compared" },
-      { label: "To fill: rows in dataset", todo: true },
-      { label: "To fill: best model AUC", todo: true },
-      { label: "To fill: top predictor", todo: true },
     ],
     blocks: [
       {
         heading: "The brief",
-        chip: "To fill: data source",
+        chip: "Sumber: penyelenggara lomba",
         body: "Self-initiated project comparing three tree-based approaches to estimating flood probability, treated as a methodology exercise rather than a leaderboard chase.",
       },
       {
