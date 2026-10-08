@@ -24,7 +24,7 @@ export default function Nav() {
           ))}
         </div>
         <Magnetic
-          href="/assets/Resume-Ayunita Maharani.pdf"
+          href="/assets/Resume_Ayunita Maharani.pdf"
           target="_blank"
           className="flex items-center gap-2 rounded-full bg-blue py-2 pl-4 pr-2 text-[12px] font-bold text-navy-soft"
         >
